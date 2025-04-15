@@ -1,0 +1,176 @@
+CATEGORY
+Ingredients
+Dessert
+Maindish
+
+Restaurant
+DindoRamenShop
+# Ingredients
+Noodle - 
+Fish - 
+ Fish P9 - Economy 4star
+ Fish P15 - Quality 5star
+ Fish P25 - Wagyu Fish 3star
+Prawn - 
+Water - 
+Soy Sauce - 
+# Dessert
+- Mango Juice
+- Chocolate Cake
+(open for suggestion) - feature
+Mangofloat - (is good for your restaurant)
+
+
+---
+
+How many developers have you experienced getting from Full Scale?
+How long is your relationship with Full Scale?
+How did you find Full Scale?
+
+---
+
+process
+personal -> existing project
+nextjs app. halfway done. requirements outlined.
+
+2 projects
+wrapping the nextjs app, wrap up and complete ->
+survey platform -> custom survey platform
+
+API reading the data;
+
+AG Enterprise, data representation.
+
+
+---
+
+overlap;
+Have you 
+
+dashboard cloud run
+reverse proxy going to service
+
+very straightforward
+
+less complexity;
+
+work OS;
+
+completed app itself;
+
+Scott team.
+
+He works with the backend.
+
+Basically; Bring your own database approach.
+
+In terms of; nextjs.
+
+---
+
+application itself
+
+BigQuery OLAPS system
+App hosting cloud run
+Build system cloud build
+Push to dev -> deploy to dev env
+Prod -> deploy to prod
+
+API cloud run
+big query
+
+workflow orchestration
+moving away from AirFlow to Prefect
+
+ETL
+
+---
+
+New account breaker;
+April 14;
+
+Onboarding call, Monday as well.
+
+---
+
+:::
+
+---
+
+;;;
+
+---
+
+Employee objective setting;
+new version of document;
+
+---
+
+Sailes - Happy part of your team.
+Remember feedback of the client.
+
+---
+
+Regardless of whether, communication, client - I don't know that.
+
+---
+
+4 years ago.
+Serious, planned to go to next level.
+
+Neither are backend.
+I've build and led, analytics.
+
+Used to hypergrowth tech startup.
+Wearing a lot of hats.
+
+CTO;
+
+Support entire backend, built upon google cloud.
+All google cloud services.
+
+Working with previous developer.
+Deployments and infrastructure.
+
+---
+OrgAcuity:
+
+BACKEND: Cloud Run, Prefect (orchestration), Cloud build (build system)
+FRONTEND: Running on Cloud Run, Written with JS/TS (NextJS)
+DATABASE: Google Big Query, PostgreSQL
+
+METHODOLOGY: Kanban
+
+REFERENCE: HAD AN APPLICATION
+
+NICE GUI: PYTHON BASED APP;
+
+Rendered on diff data tables
+
+5-6 diff pages not yet developed
+
+Run locally, important to reference
+
+DOCUMENTATION separate repo on GitHub
+
+---
+Retchel:
+
+ITEMS_WORK_WITH: 2 weeks cycle
+
+---
+
+Life support, application couple of month ago;
+Issues with prior engineer, life happened and moved on.
+People who want to demo.
+Push the data out.
+
+---
+
+Demo-able state and prospect
+
+---
+
+Production server
+
+---
