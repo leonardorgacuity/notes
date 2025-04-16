@@ -1,6 +1,6 @@
 # Questions and Tasks for OrgAcuity Dashboard Development
 
-## Questions
+# Questions
 
 ### Q
 
@@ -83,9 +83,9 @@ When a user selects "Changes", the metrics in the heatmap should display the dif
 
 ---
 
-## Questions and Tasks if Answered
+<br><br><br>
 
-### Q & TASK AFTER ANSWERED
+# Questions and Tasks if Answered
 
 #### Q
 
@@ -96,8 +96,6 @@ Video reference for Filter in Representation page for Participation, Is this col
 Check if the filter in Representation page is collapsible dropdown within dropdown or not and apply if needed changes.
 
 ---
-
-### Q & TASK AFTER ANSWERED
 
 #### Q
 
@@ -120,8 +118,6 @@ Check if the help icon is a question mark icon or not. If it is, then apply the 
 
 ---
 
-!QUESTION AND TASK AFTER ANSWERED
-
 #### Q
 
 ```
@@ -138,7 +134,9 @@ Need more clarifying info for this
 
 ---
 
-## Tasks
+<br><br><br>
+
+# Tasks
 
 ### T
 
