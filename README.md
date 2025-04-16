@@ -22,6 +22,10 @@ Are we using an authentication library for our auth?
 
 ### Q
 
+`Page: Home >> Alerts`
+
+document reference:
+
 ```
 We need two page-specific filters:
 Alert Type (multi-select)
@@ -33,6 +37,8 @@ Top 25
 Top 50
 Top 100
 ```
+
+Q:
 
 - currently no image on how it should look like.
 - is it the same as video reference in representation page?
@@ -196,7 +202,7 @@ We should display managers (teams) in a drillable tree structure (like this exam
 
 ### T
 
-Page: Participation >> Representation (NEW PAGE)
+`Page: Participation >> Representation (NEW PAGE)`
 
 - Requirements are in the orgacuity requirement doc.
 
@@ -204,7 +210,7 @@ Page: Participation >> Representation (NEW PAGE)
 
 ### T
 
-Page: Analytics >> Heatmap (rename… currently named "Distributions")
+`Page: Analytics >> Heatmap (rename… currently named "Distributions")`
 
 - check if the requirements is applied correctly.
 
