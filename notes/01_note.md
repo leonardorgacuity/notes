@@ -190,3 +190,106 @@ The updated NiceGUI dashboard, combined with the changes outlined in this docume
 - Ensure all changes align with the provided design examples and requirements.
 - Focus on improving usability and performance while maintaining brand consistency.
 - Lifecycle survey-specific differences should be implemented as outlined.
+
+### Notes on Handling Minimum N-Count Threshold
+
+When the minimum n-count threshold is not met for a particular manager, the following adjustments must be implemented to ensure accurate representation:
+
+1. **Engagement Score**:
+
+   - Display “--” instead of `0` to avoid misinterpretation of a highly disengaged team.
+   - _Note_: This ensures that the absence of data is not misinterpreted as a negative outcome.
+
+2. **Scores Increased/Decreased**:
+
+   - Replace “None” with “--” in the sentences under the **Questions** section.
+   - _Note_: This change highlights the lack of sufficient data rather than implying no change occurred.
+
+3. **Retention Risk**:
+
+   - Display “--” instead of “None” to align with the updated handling logic.
+   - _Note_: This avoids confusion by clearly indicating that data is unavailable rather than suggesting no risk exists.
+
+_Note_: These changes are essential for maintaining consistency and avoiding confusion in scenarios where data thresholds are not met.
+
+---
+
+### Notes on Strengths and Opportunities Identification
+
+OrgAcuity's Focus Agent employs a sophisticated methodology to identify strengths and opportunities, ensuring actions have the greatest impact on organizational effectiveness. This process involves a **heartbeat analysis** to determine items that respondents care about most, both positively and negatively.
+
+#### Key Definitions:
+
+- **Strengths**: Items rated significantly higher than a respondent's average rating.  
+   _Note_: If there is a tie, the item with the highest average score is selected.
+
+- **Opportunities**: Items rated significantly lower than a respondent's average rating.  
+   _Note_: If there is a tie, the item with the highest percentage of neutral respondents is selected.
+
+#### Methodology:
+
+1. **Individual Baseline**: Each respondent's average rating across all items is calculated.
+2. **Deviation Analysis**: Items are flagged as strengths or opportunities based on significant deviations from the respondent's baseline.
+3. **Tie-Breaking**: Ties are resolved using predefined rules to ensure consistency.
+
+This approach minimizes bias and ensures that actionable insights are derived from the data.
+
+---
+
+### Notes on Collapsed and Expanded Table Views
+
+#### Collapsed Table View:
+
+When the table’s records are collapsed, display only the following three columns:
+
+1. **Workforce Segment**:
+
+   - Format: `Attribute Name > Attribute Value`
+   - Display `Attribute Type` in smaller, lighter font beneath.
+
+2. **Favorable Alerts**:
+
+   - Count of level 2 records where `Alert Type` is either `Increases` or `High Scores`.
+
+3. **Unfavorable Alerts**:
+   - Count of level 2 records where `Alert Type` is either `Decreases` or `Low Scores`.
+
+#### Expanded Table View:
+
+For level 2 rows, display the following metrics:
+
+- **Score**
+- **Comparison**
+- **% Difference**
+- **n**
+- **Response Rate**
+
+---
+
+### Page-Specific Filters
+
+1. **Alert Type**:
+
+   - Multi-select filter to allow selection of specific alert types.
+
+2. **Show**:
+   - Single-select filter to display top X alerts based on the `Rank` field.
+   - Options:
+     - **All**
+     - **Top 10** (default)
+     - **Top 25**
+     - **Top 50**
+     - **Top 100**
+
+_Note_: Ensure the default filter settings are applied when the page loads.
+
+---
+
+- **employee_id**: A unique string identifier for each employee.  
+   _Note_: It is possible for an `employee_id` to be shared across employers, as it is only unique within a given employer’s records. Therefore, `employer_id + employee_id` ensures uniqueness for a particular person.
+
+  Since `employee_id` and `email` may change over time (e.g., due to company acquisition or employee name change), we create an immutable unique identifier for each person using the following:  
+   `TO_HEX(SHA256(CONCAT(COALESCE(stg.employee_id), COALESCE(stg.email))))`.  
+   This hashed ID is used to populate `employee_id` and `manager_id` columns downstream from staging tables for a common reference. The history of `employee_id` and `email` changes is tracked at the worker level in `people.dim_worker_ids_scd`.
+
+---
