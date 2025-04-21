@@ -3,14 +3,12 @@
 ### Legends for Task Completion
 
 - [ ] not yet completed
-- [s] submitted as PR
-- [✓] completed
-- [x] not completed
+- [x] PR submitted/completed
 
 ## Pending Tasks
 
-- [s] fix build bug with AG Grid versions
-- [✓] Check Home pages adherance to requirements document
+- [x] fix build bug with AG Grid versions
+- [x] Check Home pages adherance to requirements document
 - [ ] `Home/Alerts`, Add filter function top 10, 25, 50, 100; add client side sorting.
 - [ ] Fix Table Components column to have minimum width to see the contents.
 - [ ] Global specific Filter, add nested number for manager hierarchy. i.e (1, 2, 3, 4)
