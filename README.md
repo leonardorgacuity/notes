@@ -1,10 +1,5 @@
 # Task checklist
 
-### Legends for Task Completion
-
-- [ ] not yet completed
-- [x] PR submitted/completed
-
 ## Pending Tasks
 
 - [x] fix build bug with AG Grid versions
