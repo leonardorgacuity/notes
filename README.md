@@ -1,26 +1,30 @@
 # Task checklist
 
+1 = hour
+2 = 2hour
+3 = 3hour
+
 ## Pending Tasks
 
-- [x] fix build bug with AG Grid versions
-- [x] Check Home pages adherance to requirements document
-- [ ] `Home/Alerts`, Add filter function top 10, 25, 50, 100; add client side sorting.
-- [ ] Fix Table Components column to have minimum width to see the contents.
-- [ ] Global specific Filter, add nested number for manager hierarchy. i.e (1, 2, 3, 4)
+- [x] (1) fix build bug with AG Grid versions
+- [x] (3) Check Home pages adherance to requirements document
+- [ ] (8) `Home/Alerts`, Add filter function top 10, 25, 50, 100; add client side sorting.
+- [ ] (1) Fix Table Components column to have minimum width to see the contents.
+- [ ] (8) Global specific Filter, add nested number for manager hierarchy. i.e (1, 2, 3, 4)
   - groups users base on their manager_layer number, from smallest number to biggest (ascending)
   - The Survey Name filter should always default to the survey with an Experience survey type that has the most recent survey_start_datetime (surveys.def_survey_parameters table) that is on or before the current date. Surveys with a survey_start_date after the current date should not show in the dashboard at all. The Survey Name options in the dropdown list should be sorted from most recent (top) to earliest (bottom).
   - example queries:
     - `select \* from curated.viz_mgr_vw_setup`
     - `select \* from curated.viz_mgr_vw_setup where employer_id = 1 and user_layer = 0`
     - `select \* from curated.viz_mgr_vw_setup where employer_id = 1 and user_layer = 0 and - user_id = '' order by snapshot_data, manager_layer`
-- [ ] `Questions/Rating`, (Enforce thresholds with filter) make sure it complies to threshold. If it does not comply to minimum. Do not display the data and display placeholder.
+- [ ] (4) `Questions/Rating`, (Enforce thresholds with filter) make sure it complies to threshold. If it does not comply to minimum. Do not display the data and display placeholder.
 
   - the query for threshold is `select * from surveys.def_survey_parameters`
   - quantitative_threshold scores for numeric scores, qualitative_threshold scores for text data.
 
-- [ ] `Analytics/Heatmap`, also enforce threshold like the `Questions/Ratings` representation
+- [ ] (4) `Analytics/Heatmap`, also enforce threshold like the `Questions/Ratings` representation
 
-- [ ] `Analytics/Heatmap` Make updates to any query of the deprecated tables
+- [ ] (4) `Analytics/Heatmap` Make updates to any query of the deprecated tables
 
   - `admin.adm_display_names` to `people.def_display_names`
   - `admin.adm_survey_parameters` to `surveys.def_survey_parameters`
@@ -29,20 +33,20 @@
   - to simplify things, just check comparison_survey_id.
   - Lifecycle surveys do not have snapshot_start_date and snapshot_end_date.
 
-- [ ] `Analytics/Heartbeat Analysis` - create page, refer to requirements document.
-- [ ] `Analytics/Heatmap` - default to category, attribute type = Tenure; attribute name = Org Tenure
-- [ ] Add help question mark icon for pages that should have help text and show help texts; reference requirements doc.
-- [ ] `Participation/Teams` - We should display managers (teams) in a drillable tree structure (like this example) rather than displaying the Layer value before the manager name. Note that these layer values are dynamic based on global Manager filter selections. For example, Layer 0 in this Team field represents people who report into the specific Manager selected via the global filter.
+- [ ] (8) `Analytics/Heartbeat Analysis` - create page, refer to requirements document.
+- [ ] (1) `Analytics/Heatmap` - default to category, attribute type = Tenure; attribute name = Org Tenure
+- [ ] (4) Add help question mark icon for pages that should have help text and show help texts; reference requirements doc.
+- [ ] (16) `Participation/Teams` - We should display managers (teams) in a drillable tree structure (like this example) rather than displaying the Layer value before the manager name. Note that these layer values are dynamic based on global Manager filter selections. For example, Layer 0 in this Team field represents people who report into the specific Manager selected via the global filter.
   - the reference is: https://www.ag-grid.com/example-hr/
-- [ ] `Participation/Representation (NEW PAGE)` Requirements are in the orgacuity requirement doc.
-- [ ] `Home/Action` (rename… currently named "Narratives"). check if requirements is applied correctly.
-- [ ] `Questions/Comments` check if requirements is applied correctly.
-- [ ] `Questions/Comments` compare new mockup page
-- [ ] `Questions/Multiple Choice` check if requirements is applied correctly.
-- [ ] `Analytics/Drivers` check if requirements is applied correctly.
-- [ ] `Every data visualization should be exportable (e.g., .png file).`
+- [ ] (16) `Participation/Representation (NEW PAGE)` Requirements are in the orgacuity requirement doc.
+- [ ] (3) `Home/Action` (rename… currently named "Narratives"). check if requirements is applied correctly.
+- [ ] (3) `Questions/Comments` check if requirements is applied correctly.
+- [ ] (3) `Questions/Comments` compare new mockup page
+- [ ] (3) `Questions/Multiple Choice` check if requirements is applied correctly.
+- [ ] (3) `Analytics/Drivers` check if requirements is applied correctly.
+- [ ] (16) `Every data visualization should be exportable (e.g., .png file).`
 
-- [ ] Admin Page - reference requirements document
+- [ ] (24) Admin Page - reference requirements document
 
   - Can assign roles in the application for users
   - User Groups
