@@ -10,7 +10,7 @@
 - [x] (3) Check Home pages adherance to requirements document
 - [ ] (8) `Home/Alerts`, Add filter function top 10, 25, 50, 100; add client side sorting.
 - [ ] (1) Fix Table Components column to have minimum width to see the contents.
-- [ ] (8) Global specific Filter, add nested number for manager hierarchy. i.e (1, 2, 3, 4)
+- [x] (8) Global specific Filter, add nested number for manager hierarchy. i.e (1, 2, 3, 4)
   - groups users base on their manager_layer number, from smallest number to biggest (ascending)
   - The Survey Name filter should always default to the survey with an Experience survey type that has the most recent survey_start_datetime (surveys.def_survey_parameters table) that is on or before the current date. Surveys with a survey_start_date after the current date should not show in the dashboard at all. The Survey Name options in the dropdown list should be sorted from most recent (top) to earliest (bottom).
   - example queries:
